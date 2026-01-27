@@ -1,0 +1,882 @@
+2026-01-28 04:08:35 | sft-dialogue-summerization | experiment | INFO | experiment.py:103 | Experiment sft-dialogue-summerization created with Experiment ID: 1 at /content/rapidfireai/rapidfire_experiments/sft-dialogue-summerization (TensorBoard-only mode)
+2026-01-28 04:08:35 | sft-dialogue-summerization | experiment | INFO | experiment.py:105 | Running RapidFire AI version 0.12.9
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:69 | Found 1 workers/GPUs.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | INFO | metric_rfmetric_manager.py:56 | Initialized TensorBoardMetricLogger: rf_tensorboard
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:86 | Controller initialized
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:459 | Set experiment task to Create Models.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:470 | Saved datasets to /content/rapidfireai/rapidfire_experiments/sft-dialogue-summerization/datasets.dill
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | INFO | controller.py:476 | Set seed to 42
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 1.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 2.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 3.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 4.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 5.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 6.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 7.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:154 | Populated MetricLogger with model config info for run 8.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | INFO | controller.py:172 | Created 8 runs - 
+{   1: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 8,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0005,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    2: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 8,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    3: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0005,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    4: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    5: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 8,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0005,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    6: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 8,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    7: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0005,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'},
+    8: {   'additional_kwargs.generation_config.max_new_tokens': 128,
+           'additional_kwargs.generation_config.pad_token_id': 50256,
+           'additional_kwargs.generation_config.repetition_penalty': 1.1,
+           'additional_kwargs.generation_config.temperature': 0.7,
+           'additional_kwargs.generation_config.top_k': 40,
+           'additional_kwargs.generation_config.top_p': 0.9,
+           'model_kwargs.device_map': 'auto',
+           'model_kwargs.use_cache': False,
+           'model_name': 'gpt2',
+           'model_type': 'causal_lm',
+           'peft_params.bias': 'none',
+           'peft_params.lora_alpha': 16,
+           'peft_params.lora_dropout': 0.1,
+           'peft_params.r': 16,
+           'peft_params.target_modules': ['c_attn'],
+           'tokenizer': None,
+           'tokenizer_kwargs': None,
+           'trainer_type': 'SFT',
+           'training_args.eval_steps': 4,
+           'training_args.eval_strategy': 'steps',
+           'training_args.fp16': True,
+           'training_args.gradient_accumulation_steps': 2,
+           'training_args.gradient_checkpointing': True,
+           'training_args.learning_rate': 0.0002,
+           'training_args.logging_steps': 2,
+           'training_args.lr_scheduler_type': 'linear',
+           'training_args.max_steps': 32,
+           'training_args.per_device_eval_batch_size': 2,
+           'training_args.per_device_train_batch_size': 2,
+           'training_args.report_to': 'none'}}
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:173 | Got 8 runs for Initial.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:177 | Completed creating models.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:488 | Created models.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:494 | Set experiment task to Training and Validation.
+2026-01-28 04:08:52 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:109 | Creating 1 worker processes...
+2026-01-28 04:08:52 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:117 | Cannot create process group (restricted environment) - will use individual process termination
+2026-01-28 04:08:52 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:140 | Started Worker 0 with PID 4477
+2026-01-28 04:08:52 | sft-dialogue-summerization | worker_manager | INFO | worker_manager.py:147 | Started 1 worker processes successfully
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:500 | Created 1 workers.
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | INFO | controller.py:515 | Starting Training and Validation
+2026-01-28 04:08:52 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 0
+2026-01-28 04:09:11 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:72 | Worker 0 initialized with PID 4477
+2026-01-28 04:09:11 | sft-dialogue-summerization | worker_0 | INFO | metric_rfmetric_manager.py:56 | Initialized TensorBoardMetricLogger: rf_tensorboard
+2026-01-28 04:09:11 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:101 | Loaded datasets
+2026-01-28 04:09:11 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:09:11 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 0
+2026-01-28 04:09:33 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:278 | Saved base_model for run gpt2
+2026-01-28 04:09:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 0
+2026-01-28 04:09:46 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:09:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-01-28 04:09:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 0
+2026-01-28 04:09:47 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 0 on worker 0
+2026-01-28 04:09:47 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 4/32
+2026-01-28 04:09:47 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 0
+2026-01-28 04:09:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:09:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 0
+2026-01-28 04:09:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 0
+2026-01-28 04:09:59 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:09:59 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 0
+2026-01-28 04:10:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 0
+2026-01-28 04:10:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 0 on worker 0
+2026-01-28 04:10:00 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 4/32
+2026-01-28 04:10:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 0
+2026-01-28 04:10:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:10:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 0
+2026-01-28 04:10:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 0
+2026-01-28 04:10:13 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:10:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 0
+2026-01-28 04:10:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 0
+2026-01-28 04:10:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 0 on worker 0
+2026-01-28 04:10:14 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 4/32
+2026-01-28 04:10:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 0
+2026-01-28 04:10:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:10:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 0
+2026-01-28 04:10:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 0
+2026-01-28 04:10:26 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:10:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 0
+2026-01-28 04:10:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 0
+2026-01-28 04:10:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 0 on worker 0
+2026-01-28 04:10:27 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 4/32
+2026-01-28 04:10:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 0
+2026-01-28 04:10:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:10:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 0
+2026-01-28 04:10:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 0
+2026-01-28 04:10:39 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:10:39 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 0
+2026-01-28 04:10:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 0
+2026-01-28 04:10:40 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 0 on worker 0
+2026-01-28 04:10:40 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 4/32
+2026-01-28 04:10:40 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-28 04:10:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:10:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 0
+2026-01-28 04:10:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 0
+2026-01-28 04:10:53 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:10:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-28 04:10:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 0
+2026-01-28 04:10:53 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 0 on worker 0
+2026-01-28 04:10:53 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 4/32
+2026-01-28 04:10:53 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 0
+2026-01-28 04:10:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:10:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 0
+2026-01-28 04:10:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 0
+2026-01-28 04:11:06 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:11:06 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 0
+2026-01-28 04:11:06 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 0
+2026-01-28 04:11:07 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 0 on worker 0
+2026-01-28 04:11:07 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 4/32
+2026-01-28 04:11:07 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 0
+2026-01-28 04:11:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:11:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 0
+2026-01-28 04:11:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 0
+2026-01-28 04:11:19 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:0 in-place, 7 new
+2026-01-28 04:11:19 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 0
+2026-01-28 04:11:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 0
+2026-01-28 04:11:20 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 0 on worker 0
+2026-01-28 04:11:20 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 4/32
+2026-01-28 04:11:20 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 1
+2026-01-28 04:11:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:11:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 1
+2026-01-28 04:11:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 1
+2026-01-28 04:11:32 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:11:32 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-01-28 04:11:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 1
+2026-01-28 04:11:33 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 1 on worker 0
+2026-01-28 04:11:33 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 8/32
+2026-01-28 04:11:33 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 1
+2026-01-28 04:11:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:11:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 1
+2026-01-28 04:11:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 1
+2026-01-28 04:11:46 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:11:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 1
+2026-01-28 04:11:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 1
+2026-01-28 04:11:46 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 1 on worker 0
+2026-01-28 04:11:46 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 8/32
+2026-01-28 04:11:46 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 1
+2026-01-28 04:11:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:11:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 1
+2026-01-28 04:11:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 1
+2026-01-28 04:11:59 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:11:59 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 1
+2026-01-28 04:11:59 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 1
+2026-01-28 04:12:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 1 on worker 0
+2026-01-28 04:12:00 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 8/32
+2026-01-28 04:12:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 1
+2026-01-28 04:12:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:12:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 1
+2026-01-28 04:12:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 1
+2026-01-28 04:12:12 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:12:12 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 1
+2026-01-28 04:12:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 1
+2026-01-28 04:12:13 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 1 on worker 0
+2026-01-28 04:12:13 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 8/32
+2026-01-28 04:12:13 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 1
+2026-01-28 04:12:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:12:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 1
+2026-01-28 04:12:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 1
+2026-01-28 04:12:26 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:12:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 1
+2026-01-28 04:12:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 1
+2026-01-28 04:12:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 1 on worker 0
+2026-01-28 04:12:27 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 8/32
+2026-01-28 04:12:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-28 04:12:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:12:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 1
+2026-01-28 04:12:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 1
+2026-01-28 04:12:39 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:12:39 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-28 04:12:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 1
+2026-01-28 04:12:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 1 on worker 0
+2026-01-28 04:12:41 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 8/32
+2026-01-28 04:12:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 1
+2026-01-28 04:12:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:12:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 1
+2026-01-28 04:12:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 1
+2026-01-28 04:12:53 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:12:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 1
+2026-01-28 04:12:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 1
+2026-01-28 04:12:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 1 on worker 0
+2026-01-28 04:12:54 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 8/32
+2026-01-28 04:12:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 1
+2026-01-28 04:12:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:12:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 1
+2026-01-28 04:12:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 1
+2026-01-28 04:13:06 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:13:06 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 1
+2026-01-28 04:13:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 1
+2026-01-28 04:13:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 1 on worker 0
+2026-01-28 04:13:08 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 8/32
+2026-01-28 04:13:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 2
+2026-01-28 04:13:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:13:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 2
+2026-01-28 04:13:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 2
+2026-01-28 04:13:19 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:13:19 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-01-28 04:13:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 2
+2026-01-28 04:13:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 2 on worker 0
+2026-01-28 04:13:21 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 12/32
+2026-01-28 04:13:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 2
+2026-01-28 04:13:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:13:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 2
+2026-01-28 04:13:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 2
+2026-01-28 04:13:33 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:13:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 2
+2026-01-28 04:13:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 2
+2026-01-28 04:13:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 2 on worker 0
+2026-01-28 04:13:34 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 12/32
+2026-01-28 04:13:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 2
+2026-01-28 04:13:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:13:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 2
+2026-01-28 04:13:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 2
+2026-01-28 04:13:46 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:13:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 2
+2026-01-28 04:13:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 2
+2026-01-28 04:13:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 2 on worker 0
+2026-01-28 04:13:48 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 12/32
+2026-01-28 04:13:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 2
+2026-01-28 04:13:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:13:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 2
+2026-01-28 04:13:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 2
+2026-01-28 04:14:00 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:14:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 2
+2026-01-28 04:14:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 2
+2026-01-28 04:14:02 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 2 on worker 0
+2026-01-28 04:14:02 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 12/32
+2026-01-28 04:14:02 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 2
+2026-01-28 04:14:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:14:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 2
+2026-01-28 04:14:03 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 2
+2026-01-28 04:14:14 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:14:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 2
+2026-01-28 04:14:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 2
+2026-01-28 04:14:15 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 2 on worker 0
+2026-01-28 04:14:15 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 12/32
+2026-01-28 04:14:15 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-28 04:14:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:14:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 2
+2026-01-28 04:14:16 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 2
+2026-01-28 04:14:27 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:14:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-28 04:14:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 2
+2026-01-28 04:14:28 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 2 on worker 0
+2026-01-28 04:14:28 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 12/32
+2026-01-28 04:14:28 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 2
+2026-01-28 04:14:29 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:14:29 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 2
+2026-01-28 04:14:30 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 2
+2026-01-28 04:14:41 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:14:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 2
+2026-01-28 04:14:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 2
+2026-01-28 04:14:42 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 2 on worker 0
+2026-01-28 04:14:42 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 12/32
+2026-01-28 04:14:42 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 2
+2026-01-28 04:14:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:14:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 2
+2026-01-28 04:14:43 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 2
+2026-01-28 04:14:54 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:14:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 2
+2026-01-28 04:14:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 2
+2026-01-28 04:14:55 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 2 on worker 0
+2026-01-28 04:14:55 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 12/32
+2026-01-28 04:14:55 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 3
+2026-01-28 04:14:56 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:14:56 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 3
+2026-01-28 04:14:56 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 3
+2026-01-28 04:15:07 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:15:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-01-28 04:15:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 3
+2026-01-28 04:15:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 3 on worker 0
+2026-01-28 04:15:08 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 16/32
+2026-01-28 04:15:08 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 1 has completed epoch (4/4 chunks)
+2026-01-28 04:15:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 3
+2026-01-28 04:15:09 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:15:09 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 3
+2026-01-28 04:15:09 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 3
+2026-01-28 04:15:21 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:15:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 3
+2026-01-28 04:15:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 3
+2026-01-28 04:15:22 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 3 on worker 0
+2026-01-28 04:15:22 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 16/32
+2026-01-28 04:15:22 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 2 has completed epoch (4/4 chunks)
+2026-01-28 04:15:22 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 3
+2026-01-28 04:15:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:15:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 3
+2026-01-28 04:15:23 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 3
+2026-01-28 04:15:34 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:15:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 3
+2026-01-28 04:15:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 3
+2026-01-28 04:15:35 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 3 on worker 0
+2026-01-28 04:15:35 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 16/32
+2026-01-28 04:15:35 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 3 has completed epoch (4/4 chunks)
+2026-01-28 04:15:35 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 3
+2026-01-28 04:15:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:15:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 3
+2026-01-28 04:15:36 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 3
+2026-01-28 04:15:47 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:15:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 3
+2026-01-28 04:15:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 3
+2026-01-28 04:15:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 3 on worker 0
+2026-01-28 04:15:48 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 16/32
+2026-01-28 04:15:48 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 4 has completed epoch (4/4 chunks)
+2026-01-28 04:15:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 3
+2026-01-28 04:15:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:15:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 3
+2026-01-28 04:15:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 3
+2026-01-28 04:16:00 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:16:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 3
+2026-01-28 04:16:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 3
+2026-01-28 04:16:01 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 3 on worker 0
+2026-01-28 04:16:01 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 16/32
+2026-01-28 04:16:01 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 5 has completed epoch (4/4 chunks)
+2026-01-28 04:16:01 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-28 04:16:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:16:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 3
+2026-01-28 04:16:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 3
+2026-01-28 04:16:13 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:16:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-28 04:16:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 3
+2026-01-28 04:16:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 3 on worker 0
+2026-01-28 04:16:14 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 16/32
+2026-01-28 04:16:14 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 6 has completed epoch (4/4 chunks)
+2026-01-28 04:16:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 3
+2026-01-28 04:16:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:16:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 3
+2026-01-28 04:16:16 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 3
+2026-01-28 04:16:27 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:16:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 3
+2026-01-28 04:16:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 3
+2026-01-28 04:16:28 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 3 on worker 0
+2026-01-28 04:16:28 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 16/32
+2026-01-28 04:16:28 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 7 has completed epoch (4/4 chunks)
+2026-01-28 04:16:28 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 3
+2026-01-28 04:16:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:16:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 3
+2026-01-28 04:16:29 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 3
+2026-01-28 04:16:40 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:16:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 3
+2026-01-28 04:16:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 3
+2026-01-28 04:16:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 3 on worker 0
+2026-01-28 04:16:41 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 16/32
+2026-01-28 04:16:41 | sft-dialogue-summerization | controller | INFO | controller.py:604 | Run 8 has completed epoch (4/4 chunks)
+2026-01-28 04:16:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 0
+2026-01-28 04:16:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:16:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 0
+2026-01-28 04:16:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 0
+2026-01-28 04:16:53 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:16:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 0
+2026-01-28 04:16:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 0
+2026-01-28 04:16:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 0 on worker 0
+2026-01-28 04:16:54 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 20/32
+2026-01-28 04:16:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 0
+2026-01-28 04:16:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:16:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 0
+2026-01-28 04:16:56 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 0
+2026-01-28 04:17:07 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:17:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 0
+2026-01-28 04:17:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 0
+2026-01-28 04:17:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 0 on worker 0
+2026-01-28 04:17:08 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 20/32
+2026-01-28 04:17:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 0
+2026-01-28 04:17:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:17:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 0
+2026-01-28 04:17:09 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 0
+2026-01-28 04:17:20 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:17:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 0
+2026-01-28 04:17:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 0
+2026-01-28 04:17:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 0 on worker 0
+2026-01-28 04:17:21 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 20/32
+2026-01-28 04:17:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 0
+2026-01-28 04:17:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:17:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 0
+2026-01-28 04:17:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 0
+2026-01-28 04:17:33 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:17:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 0
+2026-01-28 04:17:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 0
+2026-01-28 04:17:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 0 on worker 0
+2026-01-28 04:17:34 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 20/32
+2026-01-28 04:17:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 0
+2026-01-28 04:17:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:17:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 0
+2026-01-28 04:17:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 0
+2026-01-28 04:17:46 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:17:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 0
+2026-01-28 04:17:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 0
+2026-01-28 04:17:47 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 0 on worker 0
+2026-01-28 04:17:47 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 20/32
+2026-01-28 04:17:47 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 0
+2026-01-28 04:17:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:17:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 0
+2026-01-28 04:17:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 0
+2026-01-28 04:18:00 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:18:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 0
+2026-01-28 04:18:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 0
+2026-01-28 04:18:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 0 on worker 0
+2026-01-28 04:18:00 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 20/32
+2026-01-28 04:18:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 0
+2026-01-28 04:18:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:18:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 0
+2026-01-28 04:18:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 0
+2026-01-28 04:18:13 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:18:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 0
+2026-01-28 04:18:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 0
+2026-01-28 04:18:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 0 on worker 0
+2026-01-28 04:18:14 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 20/32
+2026-01-28 04:18:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 0
+2026-01-28 04:18:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:18:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 0
+2026-01-28 04:18:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 0
+2026-01-28 04:18:26 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:18:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 0
+2026-01-28 04:18:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 0
+2026-01-28 04:18:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 0 on worker 0
+2026-01-28 04:18:27 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 20/32
+2026-01-28 04:18:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 1
+2026-01-28 04:18:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:18:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 1
+2026-01-28 04:18:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 1
+2026-01-28 04:18:39 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:18:39 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 1
+2026-01-28 04:18:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 1
+2026-01-28 04:18:40 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 1 on worker 0
+2026-01-28 04:18:40 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 24/32
+2026-01-28 04:18:40 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 1
+2026-01-28 04:18:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:18:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 1
+2026-01-28 04:18:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 1
+2026-01-28 04:18:53 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:18:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 1
+2026-01-28 04:18:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 1
+2026-01-28 04:18:53 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 1 on worker 0
+2026-01-28 04:18:53 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 24/32
+2026-01-28 04:18:53 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 1
+2026-01-28 04:18:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:18:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 1
+2026-01-28 04:18:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 1
+2026-01-28 04:19:06 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:19:06 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 1
+2026-01-28 04:19:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 1
+2026-01-28 04:19:07 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 1 on worker 0
+2026-01-28 04:19:07 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 24/32
+2026-01-28 04:19:07 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 1
+2026-01-28 04:19:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:19:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 1
+2026-01-28 04:19:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 1
+2026-01-28 04:19:19 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:19:19 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 1
+2026-01-28 04:19:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 1
+2026-01-28 04:19:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 1 on worker 0
+2026-01-28 04:19:21 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 24/32
+2026-01-28 04:19:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 1
+2026-01-28 04:19:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:19:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 1
+2026-01-28 04:19:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 1
+2026-01-28 04:19:33 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:19:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 1
+2026-01-28 04:19:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 1
+2026-01-28 04:19:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 1 on worker 0
+2026-01-28 04:19:34 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 24/32
+2026-01-28 04:19:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 1
+2026-01-28 04:19:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:19:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 1
+2026-01-28 04:19:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 1
+2026-01-28 04:19:46 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:19:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 1
+2026-01-28 04:19:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 1
+2026-01-28 04:19:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 1 on worker 0
+2026-01-28 04:19:48 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 24/32
+2026-01-28 04:19:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 1
+2026-01-28 04:19:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:19:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 1
+2026-01-28 04:19:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 1
+2026-01-28 04:19:59 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:19:59 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 1
+2026-01-28 04:20:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 1
+2026-01-28 04:20:01 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 1 on worker 0
+2026-01-28 04:20:01 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 24/32
+2026-01-28 04:20:01 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 1
+2026-01-28 04:20:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:20:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 1
+2026-01-28 04:20:02 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 1
+2026-01-28 04:20:13 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:20:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 1
+2026-01-28 04:20:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 1
+2026-01-28 04:20:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 1 on worker 0
+2026-01-28 04:20:14 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 24/32
+2026-01-28 04:20:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 2
+2026-01-28 04:20:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:20:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 2
+2026-01-28 04:20:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 2
+2026-01-28 04:20:26 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:20:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 2
+2026-01-28 04:20:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 2
+2026-01-28 04:20:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 2 on worker 0
+2026-01-28 04:20:27 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 28/32
+2026-01-28 04:20:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 2
+2026-01-28 04:20:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:20:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 2
+2026-01-28 04:20:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 2
+2026-01-28 04:20:39 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:20:39 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 2
+2026-01-28 04:20:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 2
+2026-01-28 04:20:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 2 on worker 0
+2026-01-28 04:20:41 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 28/32
+2026-01-28 04:20:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 2
+2026-01-28 04:20:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:20:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 2
+2026-01-28 04:20:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 2
+2026-01-28 04:20:52 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:20:52 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 2
+2026-01-28 04:20:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 2
+2026-01-28 04:20:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 2 on worker 0
+2026-01-28 04:20:54 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 28/32
+2026-01-28 04:20:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 2
+2026-01-28 04:20:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:20:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 2
+2026-01-28 04:20:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 2
+2026-01-28 04:21:06 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:21:06 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 2
+2026-01-28 04:21:06 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 2
+2026-01-28 04:21:07 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 2 on worker 0
+2026-01-28 04:21:07 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 28/32
+2026-01-28 04:21:07 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 2
+2026-01-28 04:21:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:21:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 2
+2026-01-28 04:21:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 2
+2026-01-28 04:21:19 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:21:19 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 2
+2026-01-28 04:21:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 2
+2026-01-28 04:21:20 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 2 on worker 0
+2026-01-28 04:21:20 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 28/32
+2026-01-28 04:21:20 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 2
+2026-01-28 04:21:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:21:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 2
+2026-01-28 04:21:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 2
+2026-01-28 04:21:32 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:21:32 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 2
+2026-01-28 04:21:33 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 2
+2026-01-28 04:21:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 2 on worker 0
+2026-01-28 04:21:34 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 28/32
+2026-01-28 04:21:34 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 2
+2026-01-28 04:21:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:21:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 2
+2026-01-28 04:21:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 2
+2026-01-28 04:21:46 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:21:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 2
+2026-01-28 04:21:46 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 2
+2026-01-28 04:21:47 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 2 on worker 0
+2026-01-28 04:21:47 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 28/32
+2026-01-28 04:21:47 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 2
+2026-01-28 04:21:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:21:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 2
+2026-01-28 04:21:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 2
+2026-01-28 04:21:59 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:21:59 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 2
+2026-01-28 04:22:00 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 2
+2026-01-28 04:22:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 2 on worker 0
+2026-01-28 04:22:00 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 28/32
+2026-01-28 04:22:00 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 1 on worker 0 for chunk 3
+2026-01-28 04:22:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 1
+2026-01-28 04:22:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 1 with chunk 3
+2026-01-28 04:22:01 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 1 on chunk 3
+2026-01-28 04:22:12 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:22:12 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 1 on chunk 3
+2026-01-28 04:22:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 1 on chunk 3
+2026-01-28 04:22:13 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 1 on chunk 3
+2026-01-28 04:22:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 1, chunk 3 on worker 0
+2026-01-28 04:22:14 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 1 completed steps - 32/32
+2026-01-28 04:22:14 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 1 has completed all its epochs - steps 32/32
+2026-01-28 04:22:14 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 2 on worker 0 for chunk 3
+2026-01-28 04:22:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 2
+2026-01-28 04:22:14 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 2 with chunk 3
+2026-01-28 04:22:15 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 2 on chunk 3
+2026-01-28 04:22:26 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:22:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 2 on chunk 3
+2026-01-28 04:22:26 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 2 on chunk 3
+2026-01-28 04:22:27 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 2 on chunk 3
+2026-01-28 04:22:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 2, chunk 3 on worker 0
+2026-01-28 04:22:27 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 2 completed steps - 32/32
+2026-01-28 04:22:27 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 2 has completed all its epochs - steps 32/32
+2026-01-28 04:22:27 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 3 on worker 0 for chunk 3
+2026-01-28 04:22:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 3
+2026-01-28 04:22:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 3 with chunk 3
+2026-01-28 04:22:28 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 3 on chunk 3
+2026-01-28 04:22:40 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:22:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 3 on chunk 3
+2026-01-28 04:22:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 3 on chunk 3
+2026-01-28 04:22:40 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 3 on chunk 3
+2026-01-28 04:22:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 3, chunk 3 on worker 0
+2026-01-28 04:22:41 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 3 completed steps - 32/32
+2026-01-28 04:22:41 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 3 has completed all its epochs - steps 32/32
+2026-01-28 04:22:41 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 4 on worker 0 for chunk 3
+2026-01-28 04:22:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 4
+2026-01-28 04:22:41 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 4 with chunk 3
+2026-01-28 04:22:42 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 4 on chunk 3
+2026-01-28 04:22:53 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:22:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 4 on chunk 3
+2026-01-28 04:22:53 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 4 on chunk 3
+2026-01-28 04:22:54 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 4 on chunk 3
+2026-01-28 04:22:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 4, chunk 3 on worker 0
+2026-01-28 04:22:54 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 4 completed steps - 32/32
+2026-01-28 04:22:54 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 4 has completed all its epochs - steps 32/32
+2026-01-28 04:22:54 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 5 on worker 0 for chunk 3
+2026-01-28 04:22:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 5
+2026-01-28 04:22:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 5 with chunk 3
+2026-01-28 04:22:55 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 5 on chunk 3
+2026-01-28 04:23:07 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:23:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 5 on chunk 3
+2026-01-28 04:23:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 5 on chunk 3
+2026-01-28 04:23:07 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 5 on chunk 3
+2026-01-28 04:23:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 5, chunk 3 on worker 0
+2026-01-28 04:23:08 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 5 completed steps - 32/32
+2026-01-28 04:23:08 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 5 has completed all its epochs - steps 32/32
+2026-01-28 04:23:08 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 6 on worker 0 for chunk 3
+2026-01-28 04:23:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 6
+2026-01-28 04:23:08 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 6 with chunk 3
+2026-01-28 04:23:09 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 6 on chunk 3
+2026-01-28 04:23:20 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:23:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 6 on chunk 3
+2026-01-28 04:23:20 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 6 on chunk 3
+2026-01-28 04:23:21 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 6 on chunk 3
+2026-01-28 04:23:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 6, chunk 3 on worker 0
+2026-01-28 04:23:21 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 6 completed steps - 32/32
+2026-01-28 04:23:21 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 6 has completed all its epochs - steps 32/32
+2026-01-28 04:23:21 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 7 on worker 0 for chunk 3
+2026-01-28 04:23:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 7
+2026-01-28 04:23:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 7 with chunk 3
+2026-01-28 04:23:22 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 7 on chunk 3
+2026-01-28 04:23:34 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:23:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 7 on chunk 3
+2026-01-28 04:23:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 7 on chunk 3
+2026-01-28 04:23:34 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 7 on chunk 3
+2026-01-28 04:23:35 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 7, chunk 3 on worker 0
+2026-01-28 04:23:35 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 7 completed steps - 32/32
+2026-01-28 04:23:35 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 7 has completed all its epochs - steps 32/32
+2026-01-28 04:23:35 | sft-dialogue-summerization | controller | DEBUG | controller.py:679 | Scheduled run 8 on worker 0 for chunk 3
+2026-01-28 04:23:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:260 | Received task WorkerTask.TRAIN_VAL for run 8
+2026-01-28 04:23:35 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:113 | Received run_fit on worker for run 8 with chunk 3
+2026-01-28 04:23:36 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:177 | Beginning training for run 8 on chunk 3
+2026-01-28 04:23:47 | sft-dialogue-summerization | worker-0-shm | DEBUG | shm_manager.py:367 | Checkpoint update:96 in-place, 0 new
+2026-01-28 04:23:47 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:208 | Saved checkpoint to shared memory for run 8 on chunk 3
+2026-01-28 04:23:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:222 | Saved final checkpoint for run 8 on chunk 3
+2026-01-28 04:23:48 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:240 | Completed training for run 8 on chunk 3
+2026-01-28 04:23:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:557 | Completed task: run 8, chunk 3 on worker 0
+2026-01-28 04:23:48 | sft-dialogue-summerization | controller | INFO | controller.py:558 | Run 8 completed steps - 32/32
+2026-01-28 04:23:48 | sft-dialogue-summerization | controller | INFO | controller.py:594 | Run 8 has completed all its epochs - steps 32/32
+2026-01-28 04:23:48 | sft-dialogue-summerization | controller | INFO | controller.py:657 | Scheduler indicates all runs have completed all chunks
+2026-01-28 04:23:48 | sft-dialogue-summerization | controller | DEBUG | controller.py:695 | Set experiment task to Idle.
+2026-01-28 04:23:48 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:154 | WorkerManager shutdown initiated...
+2026-01-28 04:23:48 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:158 | Signaling graceful shutdown...
+2026-01-28 04:23:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:290 | Worker 0 shutdown requested
+2026-01-28 04:23:49 | sft-dialogue-summerization | worker_0 | INFO | worker_manager.py:46 | Worker 0 process exiting
+2026-01-28 04:23:49 | sft-dialogue-summerization | worker_0 | DEBUG | worker.py:290 | Worker 0 shutdown requested
+2026-01-28 04:23:53 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:177 | All workers shutdown gracefully
+2026-01-28 04:23:53 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:154 | WorkerManager shutdown initiated...
+2026-01-28 04:23:53 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:158 | Signaling graceful shutdown...
+2026-01-28 04:23:53 | sft-dialogue-summerization | worker_manager | DEBUG | worker_manager.py:177 | All workers shutdown gracefully

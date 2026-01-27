@@ -1,0 +1,681 @@
+2026-01-28 04:09:33 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 1687.13 examples/s]
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 2086.61 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3357.12 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 634.76 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 2965.88 examples/s]
+Adding EOS to eval dataset:   0%|          | 0/10 [00:00<?, ? examples/s]Adding EOS to eval dataset: 100%|##########| 10/10 [00:00<00:00, 2506.76 examples/s]
+Tokenizing eval dataset:   0%|          | 0/10 [00:00<?, ? examples/s]Tokenizing eval dataset: 100%|##########| 10/10 [00:00<00:00, 723.02 examples/s]
+Truncating eval dataset:   0%|          | 0/10 [00:00<?, ? examples/s]Truncating eval dataset: 100%|##########| 10/10 [00:00<00:00, 2443.38 examples/s]
+
+2026-01-28 04:09:46 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.601, 'grad_norm': 1.0609393119812012, 'learning_rate': 0.000484375, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.3673882335424423, 'epoch': 0.5}
+{'loss': 3.2728, 'grad_norm': 0.5008893013000488, 'learning_rate': 0.000453125, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.40506450086832047, 'epoch': 1.0}
+{'eval_loss': 3.144371509552002, 'eval_runtime': 0.1399, 'eval_samples_per_second': 71.489, 'eval_steps_per_second': 35.745, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.42138751745224, 'epoch': 1.0}
+{'train_runtime': 12.1828, 'train_samples_per_second': 1.313, 'train_steps_per_second': 0.328, 'train_loss': 3.436859130859375, 'epoch': 1.0}
+
+2026-01-28 04:09:46 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:02<00:08,  2.04s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.90s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.82s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.81s/it]
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 6.14kB [00:00, 20.8MB/s]
+
+2026-01-28 04:09:48 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:09:59 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6089, 'grad_norm': 1.1343176364898682, 'learning_rate': 0.00019375000000000002, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.3662308305501938, 'epoch': 0.5}
+{'loss': 3.3044, 'grad_norm': 0.4767020344734192, 'learning_rate': 0.00018125000000000001, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.4031146317720413, 'epoch': 1.0}
+{'eval_loss': 3.1803464889526367, 'eval_runtime': 0.1335, 'eval_samples_per_second': 74.88, 'eval_steps_per_second': 37.44, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.41550339460372926, 'epoch': 1.0}
+{'train_runtime': 10.2296, 'train_samples_per_second': 1.564, 'train_steps_per_second': 0.391, 'train_loss': 3.45663058757782, 'epoch': 1.0}
+
+2026-01-28 04:09:59 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.77s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:10:02 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:10:12 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6006, 'grad_norm': 0.6905139088630676, 'learning_rate': 0.000484375, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.3662308305501938, 'epoch': 0.5}
+{'loss': 3.2756, 'grad_norm': 0.34243476390838623, 'learning_rate': 0.000453125, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.40400785207748413, 'epoch': 1.0}
+{'eval_loss': 3.145331621170044, 'eval_runtime': 0.1428, 'eval_samples_per_second': 70.042, 'eval_steps_per_second': 35.021, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.4187633991241455, 'epoch': 1.0}
+{'train_runtime': 10.3853, 'train_samples_per_second': 1.541, 'train_steps_per_second': 0.385, 'train_loss': 3.4381288290023804, 'epoch': 1.0}
+
+2026-01-28 04:10:12 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.83s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]
+
+2026-01-28 04:10:15 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:10:26 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6087, 'grad_norm': 0.732929527759552, 'learning_rate': 0.00019375000000000002, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.3662308305501938, 'epoch': 0.5}
+{'loss': 3.3073, 'grad_norm': 0.30308613181114197, 'learning_rate': 0.00018125000000000001, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.40237193554639816, 'epoch': 1.0}
+{'eval_loss': 3.1816625595092773, 'eval_runtime': 0.1348, 'eval_samples_per_second': 74.192, 'eval_steps_per_second': 37.096, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.41528391242027285, 'epoch': 1.0}
+{'train_runtime': 10.5853, 'train_samples_per_second': 1.512, 'train_steps_per_second': 0.378, 'train_loss': 3.458014965057373, 'epoch': 1.0}
+
+2026-01-28 04:10:26 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:10:28 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2750.70 examples/s]
+Map:   0%|          | 0/10 [00:00<?, ? examples/s]Map: 100%|##########| 10/10 [00:00<00:00, 2191.84 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3656.96 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 881.61 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4145.34 examples/s]
+Adding EOS to eval dataset:   0%|          | 0/10 [00:00<?, ? examples/s]Adding EOS to eval dataset: 100%|##########| 10/10 [00:00<00:00, 2490.38 examples/s]
+Tokenizing eval dataset:   0%|          | 0/10 [00:00<?, ? examples/s]Tokenizing eval dataset: 100%|##########| 10/10 [00:00<00:00, 707.88 examples/s]
+Truncating eval dataset:   0%|          | 0/10 [00:00<?, ? examples/s]Truncating eval dataset: 100%|##########| 10/10 [00:00<00:00, 3015.32 examples/s]
+
+2026-01-28 04:10:39 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.8353, 'grad_norm': 0.80809086561203, 'learning_rate': 0.000484375, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.35892363637685776, 'epoch': 0.5}
+{'loss': 3.2946, 'grad_norm': 0.5314437747001648, 'learning_rate': 0.000453125, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.4098593071103096, 'epoch': 1.0}
+{'eval_loss': 3.130727767944336, 'eval_runtime': 0.1383, 'eval_samples_per_second': 72.281, 'eval_steps_per_second': 36.14, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.42040774822235105, 'epoch': 1.0}
+{'train_runtime': 10.2354, 'train_samples_per_second': 1.563, 'train_steps_per_second': 0.391, 'train_loss': 3.5649510622024536, 'epoch': 1.0}
+
+2026-01-28 04:10:39 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.82s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:10:42 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:10:52 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.849, 'grad_norm': 0.7195497155189514, 'learning_rate': 0.00019375000000000002, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.35833121836185455, 'epoch': 0.5}
+{'loss': 3.332, 'grad_norm': 0.7629404067993164, 'learning_rate': 0.00018125000000000001, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.4061146751046181, 'epoch': 1.0}
+{'eval_loss': 3.2065062522888184, 'eval_runtime': 0.1387, 'eval_samples_per_second': 72.118, 'eval_steps_per_second': 36.059, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.4095101296901703, 'epoch': 1.0}
+{'train_runtime': 10.2367, 'train_samples_per_second': 1.563, 'train_steps_per_second': 0.391, 'train_loss': 3.5905091762542725, 'epoch': 1.0}
+
+2026-01-28 04:10:52 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:10:55 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:11:06 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.8356, 'grad_norm': 0.5326921939849854, 'learning_rate': 0.000484375, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.3599829524755478, 'epoch': 0.5}
+{'loss': 3.2956, 'grad_norm': 0.37599238753318787, 'learning_rate': 0.000453125, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.4090765714645386, 'epoch': 1.0}
+{'eval_loss': 3.134056568145752, 'eval_runtime': 0.1366, 'eval_samples_per_second': 73.21, 'eval_steps_per_second': 36.605, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.42002460956573484, 'epoch': 1.0}
+{'train_runtime': 10.327, 'train_samples_per_second': 1.549, 'train_steps_per_second': 0.387, 'train_loss': 3.5656044483184814, 'epoch': 1.0}
+
+2026-01-28 04:11:06 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:11:08 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:11:19 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.8488, 'grad_norm': 0.48147016763687134, 'learning_rate': 0.00019375000000000002, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.35773880779743195, 'epoch': 0.5}
+{'loss': 3.3325, 'grad_norm': 0.511737585067749, 'learning_rate': 0.00018125000000000001, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.4068729728460312, 'epoch': 1.0}
+{'eval_loss': 3.207108974456787, 'eval_runtime': 0.1346, 'eval_samples_per_second': 74.293, 'eval_steps_per_second': 37.146, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.4082475662231445, 'epoch': 1.0}
+{'train_runtime': 10.2666, 'train_samples_per_second': 1.558, 'train_steps_per_second': 0.39, 'train_loss': 3.5906184911727905, 'epoch': 1.0}
+
+2026-01-28 04:11:19 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:11:21 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2711.91 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3461.00 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 956.65 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4973.97 examples/s]
+
+2026-01-28 04:11:32 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6557, 'grad_norm': 0.5334774851799011, 'learning_rate': 0.000421875, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3642524257302284, 'epoch': 0.5}
+{'loss': 3.1805, 'grad_norm': 0.30901002883911133, 'learning_rate': 0.000390625, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.391037218272686, 'epoch': 1.0}
+{'eval_loss': 3.0904548168182373, 'eval_runtime': 0.1385, 'eval_samples_per_second': 72.215, 'eval_steps_per_second': 36.107, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.4257698655128479, 'epoch': 1.0}
+{'train_runtime': 10.3064, 'train_samples_per_second': 1.552, 'train_steps_per_second': 0.388, 'train_loss': 3.4180965423583984, 'epoch': 1.0}
+
+2026-01-28 04:11:32 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:11:35 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:11:45 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7341, 'grad_norm': 0.5813313126564026, 'learning_rate': 0.00016875, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3543975204229355, 'epoch': 0.5}
+{'loss': 3.2216, 'grad_norm': 0.2555006444454193, 'learning_rate': 0.00015625, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.38614004850387573, 'epoch': 1.0}
+{'eval_loss': 3.154860734939575, 'eval_runtime': 0.1325, 'eval_samples_per_second': 75.494, 'eval_steps_per_second': 37.747, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.4187555372714996, 'epoch': 1.0}
+{'train_runtime': 10.2703, 'train_samples_per_second': 1.558, 'train_steps_per_second': 0.389, 'train_loss': 3.4778594970703125, 'epoch': 1.0}
+
+2026-01-28 04:11:45 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.83s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:11:48 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:11:59 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6567, 'grad_norm': 0.3845638632774353, 'learning_rate': 0.000421875, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3628792092204094, 'epoch': 0.5}
+{'loss': 3.1816, 'grad_norm': 0.21150824427604675, 'learning_rate': 0.000390625, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.38680392503738403, 'epoch': 1.0}
+{'eval_loss': 3.0898354053497314, 'eval_runtime': 0.1343, 'eval_samples_per_second': 74.463, 'eval_steps_per_second': 37.231, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.4290366590023041, 'epoch': 1.0}
+{'train_runtime': 10.2779, 'train_samples_per_second': 1.557, 'train_steps_per_second': 0.389, 'train_loss': 3.4191421270370483, 'epoch': 1.0}
+
+2026-01-28 04:11:59 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.77s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:12:01 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:12:12 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7388, 'grad_norm': 0.37641555070877075, 'learning_rate': 0.00016875, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3542826548218727, 'epoch': 0.5}
+{'loss': 3.2258, 'grad_norm': 0.17454102635383606, 'learning_rate': 0.00015625, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.3850056380033493, 'epoch': 1.0}
+{'eval_loss': 3.1573333740234375, 'eval_runtime': 0.1391, 'eval_samples_per_second': 71.914, 'eval_steps_per_second': 35.957, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.41850108504295347, 'epoch': 1.0}
+{'train_runtime': 10.3687, 'train_samples_per_second': 1.543, 'train_steps_per_second': 0.386, 'train_loss': 3.482295036315918, 'epoch': 1.0}
+
+2026-01-28 04:12:12 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.82s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.83s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.81s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]
+
+2026-01-28 04:12:15 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2699.15 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3435.84 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 920.59 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4885.62 examples/s]
+
+2026-01-28 04:12:25 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6591, 'grad_norm': 0.625192403793335, 'learning_rate': 0.000421875, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.36645663529634476, 'epoch': 0.5}
+{'loss': 3.1908, 'grad_norm': 0.4142027795314789, 'learning_rate': 0.000390625, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.39678313583135605, 'epoch': 1.0}
+{'eval_loss': 3.0593087673187256, 'eval_runtime': 0.1367, 'eval_samples_per_second': 73.163, 'eval_steps_per_second': 36.581, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.42497320771217345, 'epoch': 1.0}
+{'train_runtime': 10.3059, 'train_samples_per_second': 1.553, 'train_steps_per_second': 0.388, 'train_loss': 3.424955129623413, 'epoch': 1.0}
+
+2026-01-28 04:12:25 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.83s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:12:28 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:12:39 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7403, 'grad_norm': 0.7460189461708069, 'learning_rate': 0.00016875, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.36362801492214203, 'epoch': 0.5}
+{'loss': 3.2905, 'grad_norm': 0.5641511082649231, 'learning_rate': 0.00015625, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.39161915332078934, 'epoch': 1.0}
+{'eval_loss': 3.158597230911255, 'eval_runtime': 0.1372, 'eval_samples_per_second': 72.894, 'eval_steps_per_second': 36.447, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.41510528326034546, 'epoch': 1.0}
+{'train_runtime': 10.179, 'train_samples_per_second': 1.572, 'train_steps_per_second': 0.393, 'train_loss': 3.5153932571411133, 'epoch': 1.0}
+
+2026-01-28 04:12:39 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]
+
+2026-01-28 04:12:42 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:12:53 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6652, 'grad_norm': 0.44724828004837036, 'learning_rate': 0.000421875, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.3657444566488266, 'epoch': 0.5}
+{'loss': 3.1935, 'grad_norm': 0.3056538999080658, 'learning_rate': 0.000390625, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.3953798711299896, 'epoch': 1.0}
+{'eval_loss': 3.062213182449341, 'eval_runtime': 0.1382, 'eval_samples_per_second': 72.36, 'eval_steps_per_second': 36.18, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.42536659836769103, 'epoch': 1.0}
+{'train_runtime': 10.4154, 'train_samples_per_second': 1.536, 'train_steps_per_second': 0.384, 'train_loss': 3.429380178451538, 'epoch': 1.0}
+
+2026-01-28 04:12:53 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.84s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.82s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]
+
+2026-01-28 04:12:55 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:13:06 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.742, 'grad_norm': 0.4838436245918274, 'learning_rate': 0.00016875, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.36280833929777145, 'epoch': 0.5}
+{'loss': 3.2926, 'grad_norm': 0.3733729124069214, 'learning_rate': 0.00015625, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.3919529840350151, 'epoch': 1.0}
+{'eval_loss': 3.1618106365203857, 'eval_runtime': 0.1419, 'eval_samples_per_second': 70.49, 'eval_steps_per_second': 35.245, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.41370593905448916, 'epoch': 1.0}
+{'train_runtime': 10.3323, 'train_samples_per_second': 1.549, 'train_steps_per_second': 0.387, 'train_loss': 3.5172932147979736, 'epoch': 1.0}
+
+2026-01-28 04:13:06 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]
+
+2026-01-28 04:13:08 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2690.17 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3511.90 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 946.31 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4977.29 examples/s]
+
+2026-01-28 04:13:19 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6527, 'grad_norm': 1.1854161024093628, 'learning_rate': 0.000359375, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.3343171328306198, 'epoch': 0.5}
+{'loss': 3.1298, 'grad_norm': 0.4051550030708313, 'learning_rate': 0.000328125, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.4283009320497513, 'epoch': 1.0}
+{'eval_loss': 3.0530974864959717, 'eval_runtime': 0.1324, 'eval_samples_per_second': 75.524, 'eval_steps_per_second': 37.762, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4311079442501068, 'epoch': 1.0}
+{'train_runtime': 10.1889, 'train_samples_per_second': 1.57, 'train_steps_per_second': 0.393, 'train_loss': 3.3912402391433716, 'epoch': 1.0}
+
+2026-01-28 04:13:19 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.76s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:13:22 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:13:33 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7991, 'grad_norm': 0.666257917881012, 'learning_rate': 0.00014375, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.330203153192997, 'epoch': 0.5}
+{'loss': 3.2346, 'grad_norm': 0.4346767067909241, 'learning_rate': 0.00013125000000000002, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.41947074979543686, 'epoch': 1.0}
+{'eval_loss': 3.137760639190674, 'eval_runtime': 0.1324, 'eval_samples_per_second': 75.513, 'eval_steps_per_second': 37.756, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.42198765873908994, 'epoch': 1.0}
+{'train_runtime': 10.3372, 'train_samples_per_second': 1.548, 'train_steps_per_second': 0.387, 'train_loss': 3.51685893535614, 'epoch': 1.0}
+
+2026-01-28 04:13:33 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.79s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:13:35 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:13:46 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6511, 'grad_norm': 0.9353796243667603, 'learning_rate': 0.000359375, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.33618663251399994, 'epoch': 0.5}
+{'loss': 3.1321, 'grad_norm': 0.2876179814338684, 'learning_rate': 0.000328125, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.4266328439116478, 'epoch': 1.0}
+{'eval_loss': 3.052981376647949, 'eval_runtime': 0.1342, 'eval_samples_per_second': 74.529, 'eval_steps_per_second': 37.264, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4319132208824158, 'epoch': 1.0}
+{'train_runtime': 10.336, 'train_samples_per_second': 1.548, 'train_steps_per_second': 0.387, 'train_loss': 3.3915843963623047, 'epoch': 1.0}
+
+2026-01-28 04:13:46 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.81s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:13:49 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:14:00 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.8052, 'grad_norm': 0.454561322927475, 'learning_rate': 0.00014375, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.330203153192997, 'epoch': 0.5}
+{'loss': 3.2394, 'grad_norm': 0.3065376877784729, 'learning_rate': 0.00013125000000000002, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.4178430885076523, 'epoch': 1.0}
+{'eval_loss': 3.139420509338379, 'eval_runtime': 0.139, 'eval_samples_per_second': 71.937, 'eval_steps_per_second': 35.968, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4211758852005005, 'epoch': 1.0}
+{'train_runtime': 10.2207, 'train_samples_per_second': 1.565, 'train_steps_per_second': 0.391, 'train_loss': 3.522324323654175, 'epoch': 1.0}
+
+2026-01-28 04:14:00 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:14:03 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2690.27 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 2833.27 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 810.89 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4663.25 examples/s]
+
+2026-01-28 04:14:14 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.597, 'grad_norm': 0.6280898451805115, 'learning_rate': 0.000359375, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.34702396392822266, 'epoch': 0.5}
+{'loss': 3.1545, 'grad_norm': 0.4288032650947571, 'learning_rate': 0.000328125, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.4302237257361412, 'epoch': 1.0}
+{'eval_loss': 3.0121607780456543, 'eval_runtime': 0.141, 'eval_samples_per_second': 70.934, 'eval_steps_per_second': 35.467, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.4340588629245758, 'epoch': 1.0}
+{'train_runtime': 10.3019, 'train_samples_per_second': 1.553, 'train_steps_per_second': 0.388, 'train_loss': 3.375723958015442, 'epoch': 1.0}
+
+2026-01-28 04:14:14 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:14:16 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:14:27 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7585, 'grad_norm': 0.8101205229759216, 'learning_rate': 0.00014375, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.3320032209157944, 'epoch': 0.5}
+{'loss': 3.322, 'grad_norm': 0.5793353915214539, 'learning_rate': 0.00013125000000000002, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.4158559888601303, 'epoch': 1.0}
+{'eval_loss': 3.12394642829895, 'eval_runtime': 0.1368, 'eval_samples_per_second': 73.117, 'eval_steps_per_second': 36.558, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.4193239867687225, 'epoch': 1.0}
+{'train_runtime': 10.3718, 'train_samples_per_second': 1.543, 'train_steps_per_second': 0.386, 'train_loss': 3.540218710899353, 'epoch': 1.0}
+
+2026-01-28 04:14:27 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:14:30 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:14:40 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5985, 'grad_norm': 0.4259452223777771, 'learning_rate': 0.000359375, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.3457421734929085, 'epoch': 0.5}
+{'loss': 3.1601, 'grad_norm': 0.30724433064460754, 'learning_rate': 0.000328125, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.4301934987306595, 'epoch': 1.0}
+{'eval_loss': 3.014596700668335, 'eval_runtime': 0.1353, 'eval_samples_per_second': 73.896, 'eval_steps_per_second': 36.948, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.43598624467849734, 'epoch': 1.0}
+{'train_runtime': 10.3023, 'train_samples_per_second': 1.553, 'train_steps_per_second': 0.388, 'train_loss': 3.3793307542800903, 'epoch': 1.0}
+
+2026-01-28 04:14:40 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.77s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:14:43 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:14:54 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7612, 'grad_norm': 0.5637888312339783, 'learning_rate': 0.00014375, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.33189015090465546, 'epoch': 0.5}
+{'loss': 3.3277, 'grad_norm': 0.44325020909309387, 'learning_rate': 0.00013125000000000002, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.41755766421556473, 'epoch': 1.0}
+{'eval_loss': 3.1263885498046875, 'eval_runtime': 0.1356, 'eval_samples_per_second': 73.727, 'eval_steps_per_second': 36.864, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.41824021339416506, 'epoch': 1.0}
+{'train_runtime': 10.4199, 'train_samples_per_second': 1.536, 'train_steps_per_second': 0.384, 'train_loss': 3.5444507598876953, 'epoch': 1.0}
+
+2026-01-28 04:14:54 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.84s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.81s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.81s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.81s/it]
+
+2026-01-28 04:14:56 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2581.71 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3268.98 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 915.89 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4784.60 examples/s]
+
+2026-01-28 04:15:07 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5777, 'grad_norm': 0.5870276689529419, 'learning_rate': 0.000296875, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.36755070835351944, 'epoch': 0.5}
+{'loss': 3.3379, 'grad_norm': 0.35657909512519836, 'learning_rate': 0.000265625, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.3758353665471077, 'epoch': 1.0}
+{'eval_loss': 3.016646146774292, 'eval_runtime': 0.1379, 'eval_samples_per_second': 72.505, 'eval_steps_per_second': 36.252, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.4325987696647644, 'epoch': 1.0}
+{'train_runtime': 10.225, 'train_samples_per_second': 1.565, 'train_steps_per_second': 0.391, 'train_loss': 3.457769513130188, 'epoch': 1.0}
+
+2026-01-28 04:15:07 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.76s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:15:09 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:15:20 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7254, 'grad_norm': 0.7727280855178833, 'learning_rate': 0.00011875, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.36155741661787033, 'epoch': 0.5}
+{'loss': 3.4627, 'grad_norm': 0.3424818515777588, 'learning_rate': 0.00010625000000000001, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.36318105459213257, 'epoch': 1.0}
+{'eval_loss': 3.123351573944092, 'eval_runtime': 0.1343, 'eval_samples_per_second': 74.46, 'eval_steps_per_second': 37.23, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.42242753505706787, 'epoch': 1.0}
+{'train_runtime': 10.2721, 'train_samples_per_second': 1.558, 'train_steps_per_second': 0.389, 'train_loss': 3.59402859210968, 'epoch': 1.0}
+
+2026-01-28 04:15:20 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.79s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:15:23 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:15:34 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5774, 'grad_norm': 0.4056183993816376, 'learning_rate': 0.000296875, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.37093913555145264, 'epoch': 0.5}
+{'loss': 3.3432, 'grad_norm': 0.2696530222892761, 'learning_rate': 0.000265625, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.37792693078517914, 'epoch': 1.0}
+{'eval_loss': 3.01251220703125, 'eval_runtime': 0.1405, 'eval_samples_per_second': 71.152, 'eval_steps_per_second': 35.576, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.43244863152503965, 'epoch': 1.0}
+{'train_runtime': 10.2428, 'train_samples_per_second': 1.562, 'train_steps_per_second': 0.391, 'train_loss': 3.4602766036987305, 'epoch': 1.0}
+
+2026-01-28 04:15:34 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.81s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:15:36 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:15:47 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7333, 'grad_norm': 0.5378423929214478, 'learning_rate': 0.00011875, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.36178694665431976, 'epoch': 0.5}
+{'loss': 3.4668, 'grad_norm': 0.2393813580274582, 'learning_rate': 0.00010625000000000001, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.3636469095945358, 'epoch': 1.0}
+{'eval_loss': 3.1258163452148438, 'eval_runtime': 0.1456, 'eval_samples_per_second': 68.697, 'eval_steps_per_second': 34.349, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.4225044310092926, 'epoch': 1.0}
+{'train_runtime': 10.2677, 'train_samples_per_second': 1.558, 'train_steps_per_second': 0.39, 'train_loss': 3.600040555000305, 'epoch': 1.0}
+
+2026-01-28 04:15:47 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.77s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:15:49 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+Map:   0%|          | 0/16 [00:00<?, ? examples/s]Map: 100%|##########| 16/16 [00:00<00:00, 2750.70 examples/s]
+Adding EOS to train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Adding EOS to train dataset: 100%|##########| 16/16 [00:00<00:00, 3461.90 examples/s]
+Tokenizing train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Tokenizing train dataset: 100%|##########| 16/16 [00:00<00:00, 907.61 examples/s]
+Truncating train dataset:   0%|          | 0/16 [00:00<?, ? examples/s]Truncating train dataset: 100%|##########| 16/16 [00:00<00:00, 4998.05 examples/s]
+
+2026-01-28 04:16:00 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5761, 'grad_norm': 0.7446668744087219, 'learning_rate': 0.000296875, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.3656148463487625, 'epoch': 0.5}
+{'loss': 3.2967, 'grad_norm': 0.3050602376461029, 'learning_rate': 0.000265625, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.37949229031801224, 'epoch': 1.0}
+{'eval_loss': 2.9740984439849854, 'eval_runtime': 0.1385, 'eval_samples_per_second': 72.186, 'eval_steps_per_second': 36.093, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.4358828604221344, 'epoch': 1.0}
+{'train_runtime': 10.1579, 'train_samples_per_second': 1.575, 'train_steps_per_second': 0.394, 'train_loss': 3.436405301094055, 'epoch': 1.0}
+
+2026-01-28 04:16:00 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.75s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.76s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]
+
+2026-01-28 04:16:02 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:16:13 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7574, 'grad_norm': 0.8066399693489075, 'learning_rate': 0.00011875, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.35138289630413055, 'epoch': 0.5}
+{'loss': 3.5143, 'grad_norm': 0.5406232476234436, 'learning_rate': 0.00010625000000000001, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.36203594505786896, 'epoch': 1.0}
+{'eval_loss': 3.099107027053833, 'eval_runtime': 0.1347, 'eval_samples_per_second': 74.22, 'eval_steps_per_second': 37.11, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.4232395350933075, 'epoch': 1.0}
+{'train_runtime': 10.2244, 'train_samples_per_second': 1.565, 'train_steps_per_second': 0.391, 'train_loss': 3.635872006416321, 'epoch': 1.0}
+
+2026-01-28 04:16:13 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:16:16 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:16:27 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5796, 'grad_norm': 0.5725646018981934, 'learning_rate': 0.000296875, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.3640051558613777, 'epoch': 0.5}
+{'loss': 3.3042, 'grad_norm': 0.2130996137857437, 'learning_rate': 0.000265625, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.3784492760896683, 'epoch': 1.0}
+{'eval_loss': 2.977220058441162, 'eval_runtime': 0.1349, 'eval_samples_per_second': 74.111, 'eval_steps_per_second': 37.056, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.43861610293388364, 'epoch': 1.0}
+{'train_runtime': 10.4297, 'train_samples_per_second': 1.534, 'train_steps_per_second': 0.384, 'train_loss': 3.441904664039612, 'epoch': 1.0}
+
+2026-01-28 04:16:27 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.79s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.82s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]
+
+2026-01-28 04:16:29 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:16:40 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.7603, 'grad_norm': 0.5763711333274841, 'learning_rate': 0.00011875, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.3507867008447647, 'epoch': 0.5}
+{'loss': 3.5184, 'grad_norm': 0.37552696466445923, 'learning_rate': 0.00010625000000000001, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.36065341532230377, 'epoch': 1.0}
+{'eval_loss': 3.102619171142578, 'eval_runtime': 0.136, 'eval_samples_per_second': 73.517, 'eval_steps_per_second': 36.759, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.4239052891731262, 'epoch': 1.0}
+{'train_runtime': 10.2675, 'train_samples_per_second': 1.558, 'train_steps_per_second': 0.39, 'train_loss': 3.639319062232971, 'epoch': 1.0}
+
+2026-01-28 04:16:40 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:16:42 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:16:53 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.2712, 'grad_norm': 0.4508441388607025, 'learning_rate': 0.000234375, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.38827890157699585, 'epoch': 0.5}
+{'loss': 3.0318, 'grad_norm': 0.34832099080085754, 'learning_rate': 0.00020312500000000002, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.43228886276483536, 'epoch': 1.0}
+{'eval_loss': 2.9917378425598145, 'eval_runtime': 0.1341, 'eval_samples_per_second': 74.544, 'eval_steps_per_second': 37.272, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.43930004835128783, 'epoch': 1.0}
+{'train_runtime': 10.187, 'train_samples_per_second': 1.571, 'train_steps_per_second': 0.393, 'train_loss': 3.151503801345825, 'epoch': 1.0}
+
+2026-01-28 04:16:53 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.77s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:16:56 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:17:06 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4499, 'grad_norm': 0.7849891185760498, 'learning_rate': 9.375e-05, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.37376511842012405, 'epoch': 0.5}
+{'loss': 3.1707, 'grad_norm': 0.5059616565704346, 'learning_rate': 8.125000000000001e-05, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.41460035741329193, 'epoch': 1.0}
+{'eval_loss': 3.1098127365112305, 'eval_runtime': 0.1352, 'eval_samples_per_second': 73.941, 'eval_steps_per_second': 36.971, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.4232742846012115, 'epoch': 1.0}
+{'train_runtime': 10.2931, 'train_samples_per_second': 1.554, 'train_steps_per_second': 0.389, 'train_loss': 3.310339331626892, 'epoch': 1.0}
+
+2026-01-28 04:17:06 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.81s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:17:09 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:17:20 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.2765, 'grad_norm': 0.3181653916835785, 'learning_rate': 0.000234375, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.3854052498936653, 'epoch': 0.5}
+{'loss': 3.0346, 'grad_norm': 0.2400418221950531, 'learning_rate': 0.00020312500000000002, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.4302212968468666, 'epoch': 1.0}
+{'eval_loss': 2.995075225830078, 'eval_runtime': 0.1362, 'eval_samples_per_second': 73.436, 'eval_steps_per_second': 36.718, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.4404166638851166, 'epoch': 1.0}
+{'train_runtime': 10.2071, 'train_samples_per_second': 1.568, 'train_steps_per_second': 0.392, 'train_loss': 3.155534863471985, 'epoch': 1.0}
+
+2026-01-28 04:17:20 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:17:22 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:17:33 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4577, 'grad_norm': 0.5371145009994507, 'learning_rate': 9.375e-05, 'num_tokens': 1355.0, 'mean_token_accuracy': 0.3748494014143944, 'epoch': 0.5}
+{'loss': 3.1784, 'grad_norm': 0.3525531589984894, 'learning_rate': 8.125000000000001e-05, 'num_tokens': 3134.0, 'mean_token_accuracy': 0.41280101239681244, 'epoch': 1.0}
+{'eval_loss': 3.113434314727783, 'eval_runtime': 0.1456, 'eval_samples_per_second': 68.697, 'eval_steps_per_second': 34.348, 'eval_num_tokens': 3134.0, 'eval_mean_token_accuracy': 0.42375577092170713, 'epoch': 1.0}
+{'train_runtime': 10.2539, 'train_samples_per_second': 1.56, 'train_steps_per_second': 0.39, 'train_loss': 3.318050742149353, 'epoch': 1.0}
+
+2026-01-28 04:17:33 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:17:35 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:17:46 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.296, 'grad_norm': 0.6144422292709351, 'learning_rate': 0.000234375, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.39129672199487686, 'epoch': 0.5}
+{'loss': 3.0333, 'grad_norm': 0.4424472451210022, 'learning_rate': 0.00020312500000000002, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.4336857423186302, 'epoch': 1.0}
+{'eval_loss': 2.9499595165252686, 'eval_runtime': 0.1447, 'eval_samples_per_second': 69.114, 'eval_steps_per_second': 34.557, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.44058204293251035, 'epoch': 1.0}
+{'train_runtime': 10.1844, 'train_samples_per_second': 1.571, 'train_steps_per_second': 0.393, 'train_loss': 3.1646522283554077, 'epoch': 1.0}
+
+2026-01-28 04:17:46 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:17:49 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:17:59 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5922, 'grad_norm': 0.9116779565811157, 'learning_rate': 9.375e-05, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.37321998178958893, 'epoch': 0.5}
+{'loss': 3.2017, 'grad_norm': 0.6246248483657837, 'learning_rate': 8.125000000000001e-05, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.41784610599279404, 'epoch': 1.0}
+{'eval_loss': 3.0803070068359375, 'eval_runtime': 0.1354, 'eval_samples_per_second': 73.877, 'eval_steps_per_second': 36.939, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.4247721016407013, 'epoch': 1.0}
+{'train_runtime': 10.2636, 'train_samples_per_second': 1.559, 'train_steps_per_second': 0.39, 'train_loss': 3.396919369697571, 'epoch': 1.0}
+
+2026-01-28 04:17:59 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:18:02 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:18:13 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3003, 'grad_norm': 0.452901691198349, 'learning_rate': 0.000234375, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.39049163460731506, 'epoch': 0.5}
+{'loss': 3.0332, 'grad_norm': 0.3020380735397339, 'learning_rate': 0.00020312500000000002, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.4348762184381485, 'epoch': 1.0}
+{'eval_loss': 2.954016923904419, 'eval_runtime': 0.1391, 'eval_samples_per_second': 71.885, 'eval_steps_per_second': 35.943, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.44461530447006226, 'epoch': 1.0}
+{'train_runtime': 10.2583, 'train_samples_per_second': 1.56, 'train_steps_per_second': 0.39, 'train_loss': 3.1667230129241943, 'epoch': 1.0}
+
+2026-01-28 04:18:13 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.76s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:18:15 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:18:26 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5949, 'grad_norm': 0.6703104972839355, 'learning_rate': 9.375e-05, 'num_tokens': 1435.0, 'mean_token_accuracy': 0.3720805197954178, 'epoch': 0.5}
+{'loss': 3.2042, 'grad_norm': 0.43264010548591614, 'learning_rate': 8.125000000000001e-05, 'num_tokens': 3294.0, 'mean_token_accuracy': 0.41995441168546677, 'epoch': 1.0}
+{'eval_loss': 3.083852529525757, 'eval_runtime': 0.1361, 'eval_samples_per_second': 73.455, 'eval_steps_per_second': 36.727, 'eval_num_tokens': 3294.0, 'eval_mean_token_accuracy': 0.4248945415019989, 'epoch': 1.0}
+{'train_runtime': 10.2439, 'train_samples_per_second': 1.562, 'train_steps_per_second': 0.39, 'train_loss': 3.3995230197906494, 'epoch': 1.0}
+
+2026-01-28 04:18:26 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:18:28 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:18:39 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3905, 'grad_norm': 0.36724740266799927, 'learning_rate': 0.000171875, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.38041409105062485, 'epoch': 0.5}
+{'loss': 3.0394, 'grad_norm': 0.35172373056411743, 'learning_rate': 0.00014062500000000002, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.4057950973510742, 'epoch': 1.0}
+{'eval_loss': 2.9830503463745117, 'eval_runtime': 0.1346, 'eval_samples_per_second': 74.29, 'eval_steps_per_second': 37.145, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.44018484354019166, 'epoch': 1.0}
+{'train_runtime': 10.1489, 'train_samples_per_second': 1.577, 'train_steps_per_second': 0.394, 'train_loss': 3.214961051940918, 'epoch': 1.0}
+
+2026-01-28 04:18:39 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:18:42 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:18:52 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5921, 'grad_norm': 0.5363646745681763, 'learning_rate': 6.875e-05, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3662552237510681, 'epoch': 0.5}
+{'loss': 3.165, 'grad_norm': 0.3127169907093048, 'learning_rate': 5.6250000000000005e-05, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.388576976954937, 'epoch': 1.0}
+{'eval_loss': 3.0995757579803467, 'eval_runtime': 0.1357, 'eval_samples_per_second': 73.709, 'eval_steps_per_second': 36.855, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.423261821269989, 'epoch': 1.0}
+{'train_runtime': 10.3135, 'train_samples_per_second': 1.551, 'train_steps_per_second': 0.388, 'train_loss': 3.3785481452941895, 'epoch': 1.0}
+
+2026-01-28 04:18:52 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:18:55 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:19:06 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3985, 'grad_norm': 0.22085390985012054, 'learning_rate': 0.000171875, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3816484808921814, 'epoch': 0.5}
+{'loss': 3.0459, 'grad_norm': 0.24119703471660614, 'learning_rate': 0.00014062500000000002, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.4037381038069725, 'epoch': 1.0}
+{'eval_loss': 2.987851858139038, 'eval_runtime': 0.1353, 'eval_samples_per_second': 73.934, 'eval_steps_per_second': 36.967, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.4398137032985687, 'epoch': 1.0}
+{'train_runtime': 10.3722, 'train_samples_per_second': 1.543, 'train_steps_per_second': 0.386, 'train_loss': 3.2222084999084473, 'epoch': 1.0}
+
+2026-01-28 04:19:06 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.83s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.81s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]
+
+2026-01-28 04:19:08 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:19:19 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6014, 'grad_norm': 0.3604075014591217, 'learning_rate': 6.875e-05, 'num_tokens': 1231.0, 'mean_token_accuracy': 0.3672286197543144, 'epoch': 0.5}
+{'loss': 3.1694, 'grad_norm': 0.21394962072372437, 'learning_rate': 5.6250000000000005e-05, 'num_tokens': 3147.0, 'mean_token_accuracy': 0.3897842466831207, 'epoch': 1.0}
+{'eval_loss': 3.103393316268921, 'eval_runtime': 0.1348, 'eval_samples_per_second': 74.181, 'eval_steps_per_second': 37.09, 'eval_num_tokens': 3147.0, 'eval_mean_token_accuracy': 0.42367268800735475, 'epoch': 1.0}
+{'train_runtime': 10.3071, 'train_samples_per_second': 1.552, 'train_steps_per_second': 0.388, 'train_loss': 3.385407328605652, 'epoch': 1.0}
+
+2026-01-28 04:19:19 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.82s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:19:22 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:19:33 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.38, 'grad_norm': 0.4533248841762543, 'learning_rate': 0.000171875, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.38749507814645767, 'epoch': 0.5}
+{'loss': 2.9885, 'grad_norm': 0.32737717032432556, 'learning_rate': 0.00014062500000000002, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.4110422283411026, 'epoch': 1.0}
+{'eval_loss': 2.940014123916626, 'eval_runtime': 0.1367, 'eval_samples_per_second': 73.153, 'eval_steps_per_second': 36.576, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.4426745116710663, 'epoch': 1.0}
+{'train_runtime': 10.2804, 'train_samples_per_second': 1.556, 'train_steps_per_second': 0.389, 'train_loss': 3.184282064437866, 'epoch': 1.0}
+
+2026-01-28 04:19:33 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:19:35 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:19:46 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5886, 'grad_norm': 0.44777315855026245, 'learning_rate': 6.875e-05, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.36594458669424057, 'epoch': 0.5}
+{'loss': 3.1702, 'grad_norm': 0.39474716782569885, 'learning_rate': 5.6250000000000005e-05, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.39802707731723785, 'epoch': 1.0}
+{'eval_loss': 3.0690035820007324, 'eval_runtime': 0.1482, 'eval_samples_per_second': 67.465, 'eval_steps_per_second': 33.733, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.4243661522865295, 'epoch': 1.0}
+{'train_runtime': 10.3387, 'train_samples_per_second': 1.548, 'train_steps_per_second': 0.387, 'train_loss': 3.3793962001800537, 'epoch': 1.0}
+
+2026-01-28 04:19:46 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:19:48 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:19:59 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3851, 'grad_norm': 0.3163050711154938, 'learning_rate': 0.000171875, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.39050011336803436, 'epoch': 0.5}
+{'loss': 2.9896, 'grad_norm': 0.23542138934135437, 'learning_rate': 0.00014062500000000002, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.41319628059864044, 'epoch': 1.0}
+{'eval_loss': 2.9432003498077393, 'eval_runtime': 0.1374, 'eval_samples_per_second': 72.772, 'eval_steps_per_second': 36.386, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.44302544593811033, 'epoch': 1.0}
+{'train_runtime': 10.2129, 'train_samples_per_second': 1.567, 'train_steps_per_second': 0.392, 'train_loss': 3.1873250007629395, 'epoch': 1.0}
+
+2026-01-28 04:19:59 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.75s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:20:02 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:20:12 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.5897, 'grad_norm': 0.3097396790981293, 'learning_rate': 6.875e-05, 'num_tokens': 1311.0, 'mean_token_accuracy': 0.3664216846227646, 'epoch': 0.5}
+{'loss': 3.1726, 'grad_norm': 0.29179567098617554, 'learning_rate': 5.6250000000000005e-05, 'num_tokens': 3307.0, 'mean_token_accuracy': 0.3988660052418709, 'epoch': 1.0}
+{'eval_loss': 3.0705056190490723, 'eval_runtime': 0.1402, 'eval_samples_per_second': 71.314, 'eval_steps_per_second': 35.657, 'eval_num_tokens': 3307.0, 'eval_mean_token_accuracy': 0.4247595429420471, 'epoch': 1.0}
+{'train_runtime': 10.2472, 'train_samples_per_second': 1.561, 'train_steps_per_second': 0.39, 'train_loss': 3.381123661994934, 'epoch': 1.0}
+
+2026-01-28 04:20:12 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.75s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.79s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:20:15 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:20:26 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3983, 'grad_norm': 0.5602197647094727, 'learning_rate': 0.000109375, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.3540196195244789, 'epoch': 0.5}
+{'loss': 3.0084, 'grad_norm': 0.3436069190502167, 'learning_rate': 7.8125e-05, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.4424156993627548, 'epoch': 1.0}
+{'eval_loss': 2.9777019023895264, 'eval_runtime': 0.1317, 'eval_samples_per_second': 75.945, 'eval_steps_per_second': 37.972, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4406176209449768, 'epoch': 1.0}
+{'train_runtime': 10.2657, 'train_samples_per_second': 1.559, 'train_steps_per_second': 0.39, 'train_loss': 3.2033294439315796, 'epoch': 1.0}
+
+2026-01-28 04:20:26 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.79s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:20:28 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:20:39 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6752, 'grad_norm': 0.8930357098579407, 'learning_rate': 4.375e-05, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.3372662216424942, 'epoch': 0.5}
+{'loss': 3.1664, 'grad_norm': 0.4782533347606659, 'learning_rate': 3.125e-05, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.4241115227341652, 'epoch': 1.0}
+{'eval_loss': 3.0927364826202393, 'eval_runtime': 0.1323, 'eval_samples_per_second': 75.566, 'eval_steps_per_second': 37.783, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4236461818218231, 'epoch': 1.0}
+{'train_runtime': 10.2987, 'train_samples_per_second': 1.554, 'train_steps_per_second': 0.388, 'train_loss': 3.42082941532135, 'epoch': 1.0}
+
+2026-01-28 04:20:39 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:20:41 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:20:52 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4072, 'grad_norm': 0.3744600713253021, 'learning_rate': 0.000109375, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.35281359404325485, 'epoch': 0.5}
+{'loss': 3.0136, 'grad_norm': 0.22840051352977753, 'learning_rate': 7.8125e-05, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.44252798706293106, 'epoch': 1.0}
+{'eval_loss': 2.9828219413757324, 'eval_runtime': 0.1366, 'eval_samples_per_second': 73.223, 'eval_steps_per_second': 36.611, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4391958177089691, 'epoch': 1.0}
+{'train_runtime': 10.2247, 'train_samples_per_second': 1.565, 'train_steps_per_second': 0.391, 'train_loss': 3.2103986740112305, 'epoch': 1.0}
+
+2026-01-28 04:20:52 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.77s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]
+
+2026-01-28 04:20:55 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:21:06 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6853, 'grad_norm': 0.5982058048248291, 'learning_rate': 4.375e-05, 'num_tokens': 1340.0, 'mean_token_accuracy': 0.33642996847629547, 'epoch': 0.5}
+{'loss': 3.1718, 'grad_norm': 0.32414013147354126, 'learning_rate': 3.125e-05, 'num_tokens': 3148.0, 'mean_token_accuracy': 0.4223606139421463, 'epoch': 1.0}
+{'eval_loss': 3.0959205627441406, 'eval_runtime': 0.137, 'eval_samples_per_second': 72.99, 'eval_steps_per_second': 36.495, 'eval_num_tokens': 3148.0, 'eval_mean_token_accuracy': 0.4247729778289795, 'epoch': 1.0}
+{'train_runtime': 10.3845, 'train_samples_per_second': 1.541, 'train_steps_per_second': 0.385, 'train_loss': 3.4285473823547363, 'epoch': 1.0}
+
+2026-01-28 04:21:06 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.86s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.80s/it]
+
+2026-01-28 04:21:08 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:21:19 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3552, 'grad_norm': 0.5643545389175415, 'learning_rate': 0.000109375, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.3690149709582329, 'epoch': 0.5}
+{'loss': 2.984, 'grad_norm': 0.3539397418498993, 'learning_rate': 7.8125e-05, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.44332317262887955, 'epoch': 1.0}
+{'eval_loss': 2.933330774307251, 'eval_runtime': 0.1368, 'eval_samples_per_second': 73.082, 'eval_steps_per_second': 36.541, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.44281882643699644, 'epoch': 1.0}
+{'train_runtime': 10.2842, 'train_samples_per_second': 1.556, 'train_steps_per_second': 0.389, 'train_loss': 3.1695804595947266, 'epoch': 1.0}
+
+2026-01-28 04:21:19 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:21:21 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:21:32 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6124, 'grad_norm': 0.5624005794525146, 'learning_rate': 4.375e-05, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.34927327930927277, 'epoch': 0.5}
+{'loss': 3.2022, 'grad_norm': 0.404491662979126, 'learning_rate': 3.125e-05, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.4278257191181183, 'epoch': 1.0}
+{'eval_loss': 3.0629758834838867, 'eval_runtime': 0.1376, 'eval_samples_per_second': 72.699, 'eval_steps_per_second': 36.349, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.4248945415019989, 'epoch': 1.0}
+{'train_runtime': 10.3362, 'train_samples_per_second': 1.548, 'train_steps_per_second': 0.387, 'train_loss': 3.4073044061660767, 'epoch': 1.0}
+
+2026-01-28 04:21:32 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.81s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]
+
+2026-01-28 04:21:35 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:21:45 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.3579, 'grad_norm': 0.4038800597190857, 'learning_rate': 0.000109375, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.3665948435664177, 'epoch': 0.5}
+{'loss': 2.9878, 'grad_norm': 0.2481890767812729, 'learning_rate': 7.8125e-05, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.4418887719511986, 'epoch': 1.0}
+{'eval_loss': 2.9371213912963867, 'eval_runtime': 0.1351, 'eval_samples_per_second': 74.001, 'eval_steps_per_second': 37.0, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.44582427144050596, 'epoch': 1.0}
+{'train_runtime': 10.2376, 'train_samples_per_second': 1.563, 'train_steps_per_second': 0.391, 'train_loss': 3.1728627681732178, 'epoch': 1.0}
+
+2026-01-28 04:21:45 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.78s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.76s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:21:48 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:21:59 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.613, 'grad_norm': 0.3996891677379608, 'learning_rate': 4.375e-05, 'num_tokens': 1420.0, 'mean_token_accuracy': 0.3487521857023239, 'epoch': 0.5}
+{'loss': 3.2072, 'grad_norm': 0.2867740988731384, 'learning_rate': 3.125e-05, 'num_tokens': 3308.0, 'mean_token_accuracy': 0.426875576376915, 'epoch': 1.0}
+{'eval_loss': 3.0642318725585938, 'eval_runtime': 0.1339, 'eval_samples_per_second': 74.673, 'eval_steps_per_second': 37.337, 'eval_num_tokens': 3308.0, 'eval_mean_token_accuracy': 0.4248382031917572, 'epoch': 1.0}
+{'train_runtime': 10.3207, 'train_samples_per_second': 1.55, 'train_steps_per_second': 0.388, 'train_loss': 3.4101181030273438, 'epoch': 1.0}
+
+2026-01-28 04:21:59 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:22:01 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:22:12 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4507, 'grad_norm': 0.4893788993358612, 'learning_rate': 4.6875e-05, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.3730284944176674, 'epoch': 0.5}
+{'loss': 3.2313, 'grad_norm': 0.32101088762283325, 'learning_rate': 1.5625e-05, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.3844117149710655, 'epoch': 1.0}
+{'eval_loss': 2.975900888442993, 'eval_runtime': 0.1393, 'eval_samples_per_second': 71.783, 'eval_steps_per_second': 35.891, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.4448891580104828, 'epoch': 1.0}
+{'train_runtime': 10.374, 'train_samples_per_second': 1.542, 'train_steps_per_second': 0.386, 'train_loss': 3.3409571647644043, 'epoch': 1.0}
+
+2026-01-28 04:22:12 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]
+
+2026-01-28 04:22:15 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:22:26 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6522, 'grad_norm': 0.7428171634674072, 'learning_rate': 1.8750000000000002e-05, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.364501528441906, 'epoch': 0.5}
+{'loss': 3.4187, 'grad_norm': 0.338207870721817, 'learning_rate': 6.25e-06, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.36966584622859955, 'epoch': 1.0}
+{'eval_loss': 3.0904154777526855, 'eval_runtime': 0.1376, 'eval_samples_per_second': 72.692, 'eval_steps_per_second': 36.346, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.4238313019275665, 'epoch': 1.0}
+{'train_runtime': 10.3925, 'train_samples_per_second': 1.54, 'train_steps_per_second': 0.385, 'train_loss': 3.5354238748550415, 'epoch': 1.0}
+
+2026-01-28 04:22:26 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.83s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.80s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]
+
+2026-01-28 04:22:28 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:22:39 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4592, 'grad_norm': 0.3265857696533203, 'learning_rate': 4.6875e-05, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.37538349628448486, 'epoch': 0.5}
+{'loss': 3.2395, 'grad_norm': 0.20982672274112701, 'learning_rate': 1.5625e-05, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.3851817399263382, 'epoch': 1.0}
+{'eval_loss': 2.980661392211914, 'eval_runtime': 0.1498, 'eval_samples_per_second': 66.742, 'eval_steps_per_second': 33.371, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.4402876377105713, 'epoch': 1.0}
+{'train_runtime': 10.4014, 'train_samples_per_second': 1.538, 'train_steps_per_second': 0.385, 'train_loss': 3.3493494987487793, 'epoch': 1.0}
+
+2026-01-28 04:22:39 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.82s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.81s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.80s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.79s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]
+
+2026-01-28 04:22:42 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:22:53 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6592, 'grad_norm': 0.47027063369750977, 'learning_rate': 1.8750000000000002e-05, 'num_tokens': 1540.0, 'mean_token_accuracy': 0.36372027546167374, 'epoch': 0.5}
+{'loss': 3.4231, 'grad_norm': 0.2455153465270996, 'learning_rate': 6.25e-06, 'num_tokens': 3198.0, 'mean_token_accuracy': 0.36674144119024277, 'epoch': 1.0}
+{'eval_loss': 3.094106674194336, 'eval_runtime': 0.1333, 'eval_samples_per_second': 75.002, 'eval_steps_per_second': 37.501, 'eval_num_tokens': 3198.0, 'eval_mean_token_accuracy': 0.42386566400527953, 'epoch': 1.0}
+{'train_runtime': 10.2682, 'train_samples_per_second': 1.558, 'train_steps_per_second': 0.39, 'train_loss': 3.5411731004714966, 'epoch': 1.0}
+
+2026-01-28 04:22:53 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.79s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.79s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.78s/it]
+
+2026-01-28 04:22:55 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:23:06 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4275, 'grad_norm': 0.5109434723854065, 'learning_rate': 4.6875e-05, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.3868441879749298, 'epoch': 0.5}
+{'loss': 3.1833, 'grad_norm': 0.2957780361175537, 'learning_rate': 1.5625e-05, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.3959261253476143, 'epoch': 1.0}
+{'eval_loss': 2.930215835571289, 'eval_runtime': 0.1371, 'eval_samples_per_second': 72.936, 'eval_steps_per_second': 36.468, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.44270006418228147, 'epoch': 1.0}
+{'train_runtime': 10.4058, 'train_samples_per_second': 1.538, 'train_steps_per_second': 0.384, 'train_loss': 3.3053841590881348, 'epoch': 1.0}
+
+2026-01-28 04:23:06 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.82s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.78s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]
+
+2026-01-28 04:23:09 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:23:20 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6641, 'grad_norm': 0.6642589569091797, 'learning_rate': 1.8750000000000002e-05, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.3595176339149475, 'epoch': 0.5}
+{'loss': 3.4356, 'grad_norm': 0.5165817737579346, 'learning_rate': 6.25e-06, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.3671545162796974, 'epoch': 1.0}
+{'eval_loss': 3.0598092079162598, 'eval_runtime': 0.1399, 'eval_samples_per_second': 71.486, 'eval_steps_per_second': 35.743, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.4250425577163696, 'epoch': 1.0}
+{'train_runtime': 10.1943, 'train_samples_per_second': 1.569, 'train_steps_per_second': 0.392, 'train_loss': 3.5498321056365967, 'epoch': 1.0}
+
+2026-01-28 04:23:20 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.76s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.77s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.75s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.77s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.76s/it]
+
+2026-01-28 04:23:22 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:23:33 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.4323, 'grad_norm': 0.35699018836021423, 'learning_rate': 4.6875e-05, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.38690415769815445, 'epoch': 0.5}
+{'loss': 3.1887, 'grad_norm': 0.20775838196277618, 'learning_rate': 1.5625e-05, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.3951214775443077, 'epoch': 1.0}
+{'eval_loss': 2.9341092109680176, 'eval_runtime': 0.1373, 'eval_samples_per_second': 72.85, 'eval_steps_per_second': 36.425, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.4459690272808075, 'epoch': 1.0}
+{'train_runtime': 10.3678, 'train_samples_per_second': 1.543, 'train_steps_per_second': 0.386, 'train_loss': 3.31050968170166, 'epoch': 1.0}
+
+2026-01-28 04:23:33 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.80s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.78s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.81s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]Generating for metrics: 100%|##########| 5/5 [00:08<00:00,  1.80s/it]
+
+2026-01-28 04:23:36 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:175 | /usr/local/lib/python3.12/dist-packages/peft/tuners/lora/layer.py:2285: UserWarning: fan_in_fan_out is set to False but the target module is `Conv1D`. Setting fan_in_fan_out to True.
+  warnings.warn(
+
+2026-01-28 04:23:47 | sft-dialogue-summerization | worker_0 | INFO | worker.py:187 | {'loss': 3.6686, 'grad_norm': 0.4621758460998535, 'learning_rate': 1.8750000000000002e-05, 'num_tokens': 1620.0, 'mean_token_accuracy': 0.356256902217865, 'epoch': 0.5}
+{'loss': 3.4408, 'grad_norm': 0.34874725341796875, 'learning_rate': 6.25e-06, 'num_tokens': 3358.0, 'mean_token_accuracy': 0.3664695844054222, 'epoch': 1.0}
+{'eval_loss': 3.062056303024292, 'eval_runtime': 0.1362, 'eval_samples_per_second': 73.415, 'eval_steps_per_second': 36.707, 'eval_num_tokens': 3358.0, 'eval_mean_token_accuracy': 0.4251426815986633, 'epoch': 1.0}
+{'train_runtime': 10.4528, 'train_samples_per_second': 1.531, 'train_steps_per_second': 0.383, 'train_loss': 3.554701328277588, 'epoch': 1.0}
+
+2026-01-28 04:23:47 | sft-dialogue-summerization | worker_0 | ERROR | worker.py:189 | Generating for metrics:   0%|          | 0/5 [00:00<?, ?it/s]Generating for metrics:  20%|##        | 1/5 [00:01<00:07,  1.83s/it]Generating for metrics:  40%|####      | 2/5 [00:03<00:05,  1.83s/it]Generating for metrics:  60%|######    | 3/5 [00:05<00:03,  1.81s/it]Generating for metrics:  80%|########  | 4/5 [00:07<00:01,  1.81s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.81s/it]Generating for metrics: 100%|##########| 5/5 [00:09<00:00,  1.81s/it]
+
